@@ -14,6 +14,11 @@ public class SingleMonoAuto<T> : MonoBehaviour where T:MonoBehaviour
             DontDestroyOnLoad(obj);
             myInstance = obj.AddComponent<T>();
         }
+        //conflict
         return myInstance;
+    }
+    private void testChange()
+    {
+
     }
 }
